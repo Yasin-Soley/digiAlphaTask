@@ -83,7 +83,7 @@ export default function CustomSelect({
 
    return (
       <SelectContainer>
-         <SelectInputWrapper>
+         <SelectInputWrapper $focused={isOpen}>
             <SelectInputField
                ref={inputRef}
                type='text'
@@ -97,7 +97,7 @@ export default function CustomSelect({
             <SelectInputIcon>
                {optionNotFound && (
                   <button type='button' onClick={handleAddButtonClicked}>
-                     Add <FaPlus onClick={handleAddButtonClicked} />
+                     Add <FaPlus />
                   </button>
                )}
                <div className='vertical-line' />
