@@ -23,8 +23,6 @@ const SelectInputField = styled.input`
    border-radius: 5px 5px 0 0;
    cursor: pointer;
    font-size: 1rem;
-
-   z-index: 2000;
 `
 
 const DropdownList = styled.div`
@@ -49,7 +47,7 @@ const DropdownItem = styled.div`
 
 const SelectInputIcon = styled.div`
    position: absolute;
-   z-index: 1000;
+   z-index: 100;
    top: 50%;
    right: 10px;
    transform: translateY(-50%);
@@ -73,6 +71,7 @@ const SelectInputIcon = styled.div`
    }
 
    button {
+      cursor: pointer;
       display: flex;
       align-items: center;
       gap: 5px;
